@@ -1,0 +1,20 @@
+.nadpis{
+    color: #696969;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Helvetica Neue' , sans-serif;
+    letter-spacing: 2px;
+
+}
+.text{
+    color: #B22222;
+    font-family: 'Helvetica Neue' , sans-serif;
+    font-size: 18px;
+    text-align: center;
+    line-height: 24px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+
