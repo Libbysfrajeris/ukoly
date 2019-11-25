@@ -32,8 +32,33 @@
                 fclose($s);
             }
 
-            for ($i = 0; $i <= 80; $i++) {
-                echo (ucfirst($podst_pole[rand(0, sizeof($podst_pole) - 1)][0]) . " " . $slovesa_pole[rand(0, sizeof($slovesa_pole) - 1)][0] . ". ");
+            $filename3 = 'predlozky.csv';
+            $predlozky_pole = [];
+
+            if (($a = fopen("predlozky.csv", "r")) != false) {
+                while (($predlozky = fgetcsv($a, 1000, ",")) != false) {
+                    $predlozky_pole[] = $predlozky;
+                }
+                fclose($a);
+            }
+
+            $filename4 = 'spojky.csv';
+            $spojky_pole = [];
+
+            if (($b = fopen("spojky.csv", "r")) != false) {
+                while (($spojky = fgetcsv($b, 1000, ",")) != false) {
+                    $spojky_pole[] = $spojky;
+                }
+                fclose($b);
+            }
+
+            for ($i = 0; $i <= 60; $i++) {
+                echo (ucfirst($podst_pole[rand(0, sizeof($podst_pole) - 1)][0]) . " "
+                . $spojky_pole[rand(0, sizeof($spojky_pole) - 1)][0] . " "
+                . $podst_pole[rand(0, sizeof($podst_pole) - 1)][0] . " "
+                . $slovesa_pole[rand(0, sizeof($slovesa_pole) - 1)][0] . " "
+                . $predlozky_pole[rand(0, sizeof($predlozky_pole) - 1)][0] . " "
+                . $podst_pole[rand(0, sizeof($podst_pole) - 1)][0] . ". ");
             }
             ?> 
 
