@@ -61,9 +61,7 @@
                 . $podst_pole[rand(0, sizeof($podst_pole) - 1)][0] . ". ");
             }
             ?> 
-
-        </div>
-        <img src="blábot.jpg" alt="blabot" style="width:150px;height:150px;">
+            
         <div class="tlacitko">
             <form><input type=button value="Refresh" onClick="window.location.reload()"></form>
         </div>
