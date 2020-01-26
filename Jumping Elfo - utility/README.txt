@@ -1,0 +1,1 @@
+Toto je seznam utilities pro moj hru Jumping Elfo, jedná se o nekomerční projekt.
